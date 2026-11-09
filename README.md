@@ -21,6 +21,15 @@ The supplied evaluations cover UART communication, GPIO, ESP8266 AT commands, HT
 
 ## Repository layout
 
+```text
+CAT_<number>/
+  README.md
+  Assignment/         Original evaluation handout
+  Circuit_Diagram/    Wiring diagrams and reference images
+  Source_Code/        CubeMX configuration and application examples
+Common/               Shared ESP8266 and BME280 code
+```
+
 - Each CAT directory has a README with an embedded circuit diagram and pin table, an `Assignment/` directory with the original handout, and a `Source_Code/` directory with the original CubeMX settings and generated application examples.
 - [Common](Common/) contains the shared ESP8266 AT and BME280 adapter code plus the Bosch driver. Follow each CAT's README when adding files to a CubeMX-generated project.
 - [CAT 10C](CAT_10C/README.md) covers the HTTP server follow-up to [CAT 10](CAT_10/README.md). Its handout includes tasks 10C, 10D and 10E.
@@ -32,3 +41,9 @@ The supplied evaluations cover UART communication, GPIO, ESP8266 AT commands, HT
 The CAT 12 diagram shows the BME280 and ESP8266 connections to the NUCLEO-F401RE. The experiment links above open the diagrams for the other configurations.
 
 ![CAT 12 BME280 and ESP8266 wiring](CAT_12/Circuit_Diagram/wiring.svg)
+
+## How to use
+
+1. Pick a CAT from the experiment table and open its README for the wiring, pin connections, and procedure.
+2. Open the linked `.ioc` file in STM32CubeMX and generate the project. Follow the CAT README to add the application and any shared files.
+3. Build and flash the project with the configured toolchain. Use the CAT README to identify the expected terminal, browser, or Node-RED output.
