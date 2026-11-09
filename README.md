@@ -34,7 +34,7 @@ Common/               Shared ESP8266 and BME280 code
 - [Common](Common/) contains the shared ESP8266 AT and BME280 adapter code plus the Bosch driver. Follow each CAT's README when adding files to a CubeMX-generated project.
 - [CAT 10C](CAT_10C/README.md) covers the HTTP server follow-up to [CAT 10](CAT_10/README.md). Its handout includes tasks 10C, 10D and 10E.
 - The six supplied CubeMX metadata files are preserved alongside the corresponding MCU family and peripheral set. Files for CAT 9 and 10 matched byte for byte, as did the files for CAT 12 and 13.
-- The generated examples require CubeMX project generation and bench validation. CAT 13 also requires the separately distributed course `ESPLib.c` and `ESPLib.h`. No physical execution evidence was supplied.
+- The generated examples require CubeMX project generation and bench validation. The [CAT 13 README](CAT_13/README.md) covers the included course ESPLib and USART1 setup. No physical execution evidence was supplied.
 
 ## Circuit diagrams
 

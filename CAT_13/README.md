@@ -40,22 +40,22 @@ The sensor adapter produces a JSON sample and the course MQTT API publishes it w
 
 Generate the STM32 project from the linked `.ioc` before adding application files. Add each C file to the build, place headers on the include path and call `bme_mqtt_run()` from the generated `main.c` after all peripheral initialization. Add the declaration `void bme_mqtt_run(void);` above `main()` in a CubeMX USER CODE section.
 
-1. Use I²C1 and USART1 as configured in the uploaded project. The handout example uses USART2. Adapt any UART references or callbacks inside the course library to USART1 before using this configuration.
+1. Use I²C1 and USART1 as configured in the uploaded project. The handout example uses USART2. The included adaptation uses the generated `huart1` handle. In CubeMX, enable **USART1 global interrupt** under **NVIC Settings** before generating code. Keep the USART1 baud rate matched to your ESP8266 AT firmware.
 2. Add [the BME280 adapter](../Common/bme_lab.c), [its header](../Common/bme_lab.h) and [the Bosch driver](../Common/Bosch_BME280/). Enable float formatting in the project.
-3. Obtain `ESPLib.c` and `ESPLib.h` from the course repository, add them to the generated project and verify the API signatures and return conventions against the supplied integration. If the course driver requires `MQTTTimer()` or UART receive interrupts for publishing, register them according to that version and enable USART1 interrupts in CubeMX.
-4. Set local Wi-Fi, broker, topic and client ID settings. Subscribe to that exact topic in Node-RED using MQTT In → JSON → Function. Paste [the three-output function](Source_Code/node_red_values.js) and wire outputs for temperature, humidity and pressure.
+3. Add [ESPLib.c](Source_Code/ESPLib.c) to the build and put [ESPLib.h](Source_Code/ESPLib.h) on the include path. The library supplies `HAL_UART_RxCpltCallback()`. If your project already defines that callback, combine the handlers and route USART1 to the library. The CAT 13 publisher uses QoS 0. The handout’s `MQTTTimer()` hook applies to the library’s receive parser, which this publisher does not call.
+4. Set Wi-Fi credentials, the TCP broker hostname, the topic and a unique client ID in your local copy of [bme_mqtt.c](Source_Code/bme_mqtt.c). This example uses a broker that accepts MQTT 3.1.1 on port 1883 without MQTT credentials. Keep the topic and JSON payload together at 123 bytes or less. Subscribe to that exact topic in Node-RED using MQTT In → JSON → Function. Paste [the three-output function](Source_Code/node_red_values.js) and wire outputs for temperature, humidity and pressure.
 
 ## Source code
 
-[bme_mqtt.c](Source_Code/bme_mqtt.c). The C file is a generated example. The original handout and CubeMX configuration are included for reference.
+[bme_mqtt.c](Source_Code/bme_mqtt.c). The generated application uses the supplied ESPLib by Can Güveren, adapted for the CubeMX USART1 handle, bounded serial I/O and packet sizes, and error reporting. The original handout and CubeMX configuration are included for reference.
 
 ## Expected output
 
-Node-RED receives periodic MQTT messages with the three readings. The integration is conditional on obtaining and configuring the course library.
+Node-RED receives periodic MQTT messages with the three readings. The modem’s `SEND OK` indicates a successful TCP send. Use Node-RED to confirm broker delivery.
 
 ## Actual output and result
 
-Physical execution and hardware output are pending. The handout examples describe the expected behavior.
+Physical execution and hardware output are pending.
 
 - [ST Nucleo-64 board manual](https://www.st.com/resource/en/user_manual/dm00105823-nucleo-f401re-user-manual-stmicroelectronics.pdf)
 - [Espressif ESP8266 Non-OS AT reference](https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_en.pdf)

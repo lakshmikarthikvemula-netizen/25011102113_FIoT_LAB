@@ -1,4 +1,4 @@
-/* Generated integration based on the handout. Verify signatures against the course ESPLib. */
+/* CAT 13 BME280 publisher using the supplied course ESPLib. */
 #include "main.h"
 #include "bme_lab.h"
 #include "ESPLib.h"
@@ -22,18 +22,24 @@ void bme_mqtt_run(void)
     }
 
     /* Supply local lab network and broker settings before enabling this application. */
-    ESP8266_Init(StationMode, huart1);
-    ESP8266_wifiConnect("YOUR_SSID", "YOUR_PASSWORD");
-    ESP8266_portConnect("TCP", "YOUR_BROKER_HOST", "1883");
     settings.keepAlive = 60;
     settings.connectFlag = CleanSession;
     settings.clientID = LAB_MQTT_CLIENT;
-    MQTT_connectBroker(&settings);
+    if (ESP8266_Init(StationMode, &huart1) != funcOk ||
+        ESP8266_wifiConnect("YOUR_SSID", "YOUR_PASSWORD") != funcOk ||
+        ESP8266_portConnect("TCP", "YOUR_BROKER_HOST", "1883") != funcOk ||
+        MQTT_connectBroker(&settings) != funcOk) {
+        Error_Handler();
+        return;
+    }
 
     for (;;) {
         int length = bme_lab_json(json, sizeof(json));
-        if (length > 0 && (size_t)length < sizeof(json))
-            MQTT_publishTopic(LAB_MQTT_TOPIC, json, QoS0);
+        if (length > 0 && (size_t)length < sizeof(json) &&
+            MQTT_publishTopic(LAB_MQTT_TOPIC, json, QoS0) != funcOk) {
+            Error_Handler();
+            return;
+        }
         HAL_Delay(1100);
     }
 }
