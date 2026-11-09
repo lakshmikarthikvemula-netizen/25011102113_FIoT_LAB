@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 403" width="940" height="403" role="img">
+<title>CAT 09 circuit connections</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto-start-reverse"><path d="M0 0L6 3L0 6z" fill="#197367"/></marker></defs>
+<rect x="0" y="0" width="940" height="403" rx="16" fill="#f3f7fa"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#102939"><text x="28" y="39" font-size="23" font-weight="bold">CAT 09  |  Circuit connections</text>
+<text x="28" y="77" font-size="16" font-weight="bold">STM32F103C8</text>
+<text x="543" y="77" font-size="16" font-weight="bold">Connected endpoint</text>
+<rect x="24" y="91" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="91" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 108H537" stroke="#197367" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="392" cy="108" r="3" fill="#197367"/><circle cx="537" cy="108" r="3" fill="#197367"/>
+<text x="38" y="114" font-size="15">PA9 · USART1 TX</text>
+<text x="552" y="114" font-size="15">RX · 3.3 V USB–UART</text>
+<rect x="24" y="134" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="134" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 151H537" stroke="#197367" stroke-width="2.5" marker-start="url(#arrow)"/>
+<circle cx="392" cy="151" r="3" fill="#197367"/><circle cx="537" cy="151" r="3" fill="#197367"/>
+<text x="38" y="157" font-size="15">PA10 · USART1 RX</text>
+<text x="552" y="157" font-size="15">TX · 3.3 V USB–UART</text>
+<rect x="24" y="177" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="177" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 194H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="194" r="3" fill="#527486"/><circle cx="537" cy="194" r="3" fill="#527486"/>
+<text x="38" y="200" font-size="15">GND</text>
+<text x="552" y="200" font-size="15">GND · USB–UART</text>
+<rect x="24" y="220" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="220" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 237H537" stroke="#197367" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="392" cy="237" r="3" fill="#197367"/><circle cx="537" cy="237" r="3" fill="#197367"/>
+<text x="38" y="243" font-size="15">PB0 · LAB_LED</text>
+<text x="552" y="243" font-size="15">330 Ω → LED anode</text>
+<rect x="24" y="263" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="263" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 280H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="280" r="3" fill="#527486"/><circle cx="537" cy="280" r="3" fill="#527486"/>
+<text x="38" y="286" font-size="15">GND</text>
+<text x="552" y="286" font-size="15">LED cathode</text>
+<text x="28" y="333" font-size="14">Suggested external LED wiring. The uploaded CubeMX configuration has USART1 only.</text>
+<text x="28" y="356" font-size="14">Use a 3.3 V logic USB–UART adapter. Power the STM32 board separately.</text>
+</g></svg>

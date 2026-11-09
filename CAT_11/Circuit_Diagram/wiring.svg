@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 274" width="940" height="274" role="img">
+<title>CAT 11 circuit connections</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto-start-reverse"><path d="M0 0L6 3L0 6z" fill="#197367"/></marker></defs>
+<rect x="0" y="0" width="940" height="274" rx="16" fill="#f3f7fa"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#102939"><text x="28" y="39" font-size="23" font-weight="bold">CAT 11  |  Circuit connections</text>
+<text x="28" y="77" font-size="16" font-weight="bold">NUCLEO-F401RE</text>
+<text x="543" y="77" font-size="16" font-weight="bold">Connected endpoint</text>
+<rect x="24" y="91" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="91" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 108H537" stroke="#197367" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="392" cy="108" r="3" fill="#197367"/><circle cx="537" cy="108" r="3" fill="#197367"/>
+<text x="38" y="114" font-size="15">PA5 · GPIO output</text>
+<text x="552" y="114" font-size="15">LD2 · board LED</text>
+<rect x="24" y="134" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="134" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 151H537" stroke="#197367" stroke-width="2.5" marker-start="url(#arrow)"/>
+<circle cx="392" cy="151" r="3" fill="#197367"/><circle cx="537" cy="151" r="3" fill="#197367"/>
+<text x="38" y="157" font-size="15">PC13 · GPIO input</text>
+<text x="552" y="157" font-size="15">B1 · USER button</text>
+<text x="28" y="204" font-size="14">Both signal connections are on the Nucleo PCB. Power the board through ST-LINK USB.</text>
+<text x="28" y="227" font-size="14">LD2 is active high. The B1 input is active low.</text>
+</g></svg>

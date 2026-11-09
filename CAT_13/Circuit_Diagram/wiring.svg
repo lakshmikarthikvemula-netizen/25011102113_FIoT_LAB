@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 555" width="940" height="555" role="img">
+<title>CAT 13 circuit connections</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto-start-reverse"><path d="M0 0L6 3L0 6z" fill="#197367"/></marker></defs>
+<rect x="0" y="0" width="940" height="555" rx="16" fill="#f3f7fa"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#102939"><text x="28" y="39" font-size="23" font-weight="bold">CAT 13  |  Circuit connections</text>
+<text x="28" y="77" font-size="16" font-weight="bold">NUCLEO-F401RE</text>
+<text x="543" y="77" font-size="16" font-weight="bold">Connected endpoint</text>
+<rect x="24" y="91" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="91" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 108H537" stroke="#197367" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="392" cy="108" r="3" fill="#197367"/><circle cx="537" cy="108" r="3" fill="#197367"/>
+<text x="38" y="114" font-size="15">PA9 · USART1 TX</text>
+<text x="552" y="114" font-size="15">RX · ESP8266/Wemos</text>
+<rect x="24" y="134" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="134" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 151H537" stroke="#197367" stroke-width="2.5" marker-start="url(#arrow)"/>
+<circle cx="392" cy="151" r="3" fill="#197367"/><circle cx="537" cy="151" r="3" fill="#197367"/>
+<text x="38" y="157" font-size="15">PA10 · USART1 RX</text>
+<text x="552" y="157" font-size="15">TX · ESP8266/Wemos</text>
+<rect x="24" y="177" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="177" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 194H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="194" r="3" fill="#527486"/><circle cx="537" cy="194" r="3" fill="#527486"/>
+<text x="38" y="200" font-size="15">GND</text>
+<text x="552" y="200" font-size="15">GND · ESP8266/Wemos</text>
+<rect x="24" y="220" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="220" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 237H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="237" r="3" fill="#527486"/><circle cx="537" cy="237" r="3" fill="#527486"/>
+<text x="38" y="243" font-size="15">PB6 · I²C1 SCL (CN10-17)</text>
+<text x="552" y="243" font-size="15">SCL · BME280</text>
+<rect x="24" y="263" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="263" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 280H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="280" r="3" fill="#527486"/><circle cx="537" cy="280" r="3" fill="#527486"/>
+<text x="38" y="286" font-size="15">PB7 · I²C1 SDA (CN7-21)</text>
+<text x="552" y="286" font-size="15">SDA · BME280</text>
+<rect x="24" y="306" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="306" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 323H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="323" r="3" fill="#527486"/><circle cx="537" cy="323" r="3" fill="#527486"/>
+<text x="38" y="329" font-size="15">3.3 V</text>
+<text x="552" y="329" font-size="15">VDD · BME280 breakout</text>
+<rect x="24" y="349" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="349" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 366H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="366" r="3" fill="#527486"/><circle cx="537" cy="366" r="3" fill="#527486"/>
+<text x="38" y="372" font-size="15">GND</text>
+<text x="552" y="372" font-size="15">GND · BME280 breakout</text>
+<rect x="24" y="392" width="368" height="34" rx="7" fill="#ffffff"/>
+<rect x="537" y="392" width="379" height="34" rx="7" fill="#ffffff"/>
+<path d="M392 409H537" stroke="#527486" stroke-width="2.5"/>
+<circle cx="392" cy="409" r="3" fill="#527486"/><circle cx="537" cy="409" r="3" fill="#527486"/>
+<text x="38" y="415" font-size="15">External regulated 5 V supply</text>
+<text x="552" y="415" font-size="15">Wemos 5 V input (if USB is disconnected)</text>
+<text x="28" y="462" font-size="14">For a Wemos D1 mini, use USB or the illustrated 5 V feed. Tie grounds together.</text>
+<text x="28" y="485" font-size="14">Use a 3.3 V BME280 interface and pull SCL/SDA up to 3.3 V if the breakout lacks pull-ups.</text>
+<text x="28" y="508" font-size="14">For a configurable breakout, hold CSB high for I²C and set SDO for address 0x76 or 0x77.</text>
+</g></svg>
