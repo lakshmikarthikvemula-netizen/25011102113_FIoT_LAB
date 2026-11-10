@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400">
+  <rect width="700" height="400" fill="#f8f8f8" stroke="#ccc" stroke-width="1"/>
+  <text x="350" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#222">CAT 05 — 8051 Timer-Based LED Blink</text>
+  <text x="350" y="50" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">AT89S52 · Timer 0 Mode 1 · 1 Hz Blink on P1.3</text>
+
+  <!-- AT89S52 chip -->
+  <rect x="230" y="80" width="160" height="220" rx="8" fill="#1a1a2e" stroke="#444" stroke-width="2"/>
+  <text x="310" y="105" text-anchor="middle" font-family="Arial" font-size="13" font-weight="bold" fill="white">AT89S52</text>
+  <text x="310" y="122" text-anchor="middle" font-family="Arial" font-size="10" fill="#aaa">40-pin DIP</text>
+
+  <!-- Left pins -->
+  <text x="225" y="145" text-anchor="end" font-family="Arial" font-size="10" fill="#333">VCC (40)</text>
+  <line x1="230" y1="143" x2="210" y2="143" stroke="#e74c3c" stroke-width="2"/>
+
+  <text x="225" y="165" text-anchor="end" font-family="Arial" font-size="10" fill="#333">GND (20)</text>
+  <line x1="230" y1="163" x2="210" y2="163" stroke="#2c3e50" stroke-width="2"/>
+
+  <text x="225" y="185" text-anchor="end" font-family="Arial" font-size="10" fill="#333">XTAL1 (19)</text>
+  <line x1="230" y1="183" x2="210" y2="183" stroke="#8e44ad" stroke-width="2"/>
+
+  <text x="225" y="205" text-anchor="end" font-family="Arial" font-size="10" fill="#333">XTAL2 (18)</text>
+  <line x1="230" y1="203" x2="210" y2="203" stroke="#8e44ad" stroke-width="2"/>
+
+  <text x="225" y="225" text-anchor="end" font-family="Arial" font-size="10" fill="#333">RST (9)</text>
+  <line x1="230" y1="223" x2="210" y2="223" stroke="#e67e22" stroke-width="2"/>
+
+  <!-- Right pins -->
+  <text x="395" y="145" text-anchor="start" font-family="Arial" font-size="10" fill="#333">P1.3 (14)</text>
+  <line x1="390" y1="143" x2="420" y2="143" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- Crystal oscillator -->
+  <rect x="140" y="175" width="50" height="25" rx="4" fill="#f39c12" stroke="#888" stroke-width="1.5"/>
+  <text x="165" y="192" text-anchor="middle" font-family="Arial" font-size="10" fill="white">12 MHz</text>
+  <line x1="140" y1="183" x2="130" y2="183" stroke="#8e44ad" stroke-width="1.5"/>
+  <line x1="190" y1="183" x2="210" y2="183" stroke="#8e44ad" stroke-width="1.5"/>
+
+  <!-- Crystal caps 33pF -->
+  <rect x="118" y="176" width="12" height="14" rx="2" fill="#95a5a6" stroke="#666"/>
+  <text x="124" y="202" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">33pF</text>
+  <line x1="118" y1="183" x2="110" y2="183" stroke="#8e44ad" stroke-width="1.5"/>
+  <line x1="110" y1="183" x2="110" y2="300" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <rect x="118" y="196" width="12" height="14" rx="2" fill="#95a5a6" stroke="#666"/>
+  <text x="124" y="218" text-anchor="middle" font-family="Arial" font-size="8" fill="#333">33pF</text>
+  <line x1="118" y1="203" x2="110" y2="203" stroke="#8e44ad" stroke-width="1.5"/>
+
+  <!-- VCC / GND buses -->
+  <line x1="170" y1="143" x2="170" y2="80" stroke="#e74c3c" stroke-width="2" stroke-dasharray="4,3"/>
+  <line x1="210" y1="143" x2="170" y2="143" stroke="#e74c3c" stroke-width="2"/>
+  <text x="170" y="75" text-anchor="middle" font-family="Arial" font-size="10" fill="#e74c3c">+5V</text>
+
+  <line x1="210" y1="163" x2="190" y2="163" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="190" y1="163" x2="190" y2="300" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="110" y1="300" x2="350" y2="300" stroke="#2c3e50" stroke-width="2"/>
+  <text x="230" y="318" text-anchor="middle" font-family="Arial" font-size="10" fill="#2c3e50">GND</text>
+
+  <!-- Reset circuit -->
+  <rect x="140" y="208" width="50" height="20" rx="4" fill="#3498db" stroke="#888" stroke-width="1.5"/>
+  <text x="165" y="222" text-anchor="middle" font-family="Arial" font-size="9" fill="white">10kΩ RST</text>
+  <line x1="190" y1="218" x2="210" y2="223" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="140" y1="218" x2="130" y2="218" stroke="#e74c3c" stroke-width="1.5"/>
+  <line x1="130" y1="218" x2="130" y2="143" stroke="#e74c3c" stroke-width="1.5"/>
+  <line x1="130" y1="143" x2="170" y2="143" stroke="#e74c3c" stroke-width="1.5"/>
+
+  <!-- LED path -->
+  <!-- Resistor 330Ω -->
+  <rect x="440" y="130" width="50" height="20" rx="4" fill="#e67e22" stroke="#888" stroke-width="1.5"/>
+  <text x="465" y="145" text-anchor="middle" font-family="Arial" font-size="9" fill="white">330Ω</text>
+  <line x1="420" y1="143" x2="440" y2="143" stroke="#27ae60" stroke-width="2"/>
+  <line x1="490" y1="143" x2="510" y2="143" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- LED symbol -->
+  <polygon points="510,133 510,153 530,143" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="530" y1="133" x2="530" y2="153" stroke="#c0392b" stroke-width="2"/>
+  <line x1="530" y1="143" x2="530" y2="300" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="530" y1="300" x2="350" y2="300" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="520" y="120" text-anchor="middle" font-family="Arial" font-size="10" fill="#c0392b">LED</text>
+  <text x="520" y="110" text-anchor="middle" font-family="Arial" font-size="9" fill="#888">(Red)</text>
+
+  <!-- Labels -->
+  <text x="350" y="370" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">Timer 0, Mode 1 (16-bit): TH0=0xEA, TL0=0x66 → 5ms overflow → 133 overflows → 665ms ≈ 1Hz blink</text>
+  <text x="350" y="388" text-anchor="middle" font-family="Arial" font-size="10" fill="#888">P1.3 drives LED; Timer flag TF0 polled in software</text>
+</svg>
