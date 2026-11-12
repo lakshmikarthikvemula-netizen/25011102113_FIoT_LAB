@@ -1,0 +1,471 @@
+{
+  "tasks": [
+    {
+      "task": "8051/CAT2/TASK2B",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT3/TASK3A",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT4/TASK4A",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT5/TASK5A",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT5/TASK5B/TASK5B.1",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT5/TASK5B/TASK5B.2",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT5/TASK5B/TASK5B.3",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT5/TASK5C",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT6/TASK6A",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT6/TASK6B",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT7/TASK7A",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT7/TASK7B",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "8051/CAT7/TASK7C",
+      "checks": {
+        "Keil project": true,
+        "C source": true,
+        "STARTUP.A51": true,
+        "Objects folder": true,
+        "Objects HEX": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT10/TASK10A",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT10/TASK10B",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT10/TASK10C",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT11/TASK11A",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT11/TASK11B",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT12/TASK12A",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT12/TASK12B",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT12/TASK12C",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT13/TASK13",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT8/TASK8A",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT8/TASK8B",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT8/TASK8C",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT9/TASK9A",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT9/TASK9B",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    }
+  ],
+  "tasks_count": 27,
+  "file_checks_passed": 190,
+  "file_checks_total": 190,
+  "errors": [],
+  "official_evaluator": "NOT VERIFIED",
+  "hardware": "NOT VERIFIED",
+  "scope": "CAT14 excluded by owner; no hardware/simulator/Keil/CubeMX execution asserted"
+}

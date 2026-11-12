@@ -1,0 +1,1 @@
+$ sdcc -mmcs51 --model-small --code-size 8192 --iram-size 256 -I<toolchain>/usr/share/sdcc/include -L<toolchain>/usr/share/sdcc/lib/small <repo>/.build/8051/CAT7/TASK7B/main.c -o <repo>/.build/8051/CAT7/TASK7B/firmware.ihx

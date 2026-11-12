@@ -1,0 +1,245 @@
+[
+  {
+    "task": "8051/CAT2/TASK2B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT2/TASK2B/Objects/firmware.hex",
+    "sha256": "e4da90d29d0a98a345948e376e042fb9f92e93ab3c1af7ddad1cced498c8a6fd",
+    "source_sha256": "b0e9181d808e3d4c3294643d02302d47cd8dc6320faf8c2050ac3aca960d0c5a"
+  },
+  {
+    "task": "8051/CAT3/TASK3A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT3/TASK3A/Objects/firmware.hex",
+    "sha256": "e965d375bb5d156bc9b25a2c92c315da65788d14ec82c41102a1df793b01cd60",
+    "source_sha256": "5ad16e3e12dfd27100a4a68161b70ef9dc801f7717b06f0b0bc9d31d0197004b"
+  },
+  {
+    "task": "8051/CAT4/TASK4A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT4/TASK4A/Objects/firmware.hex",
+    "sha256": "1a5f2077ba912ca0d0789660e0ed1903ff637e1b617f30d74e8758f93dbb6134",
+    "source_sha256": "6266403477694ea30224c61d263a05c0744199636fec9a5af47f076b43008cee"
+  },
+  {
+    "task": "8051/CAT5/TASK5A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT5/TASK5A/Objects/firmware.hex",
+    "sha256": "1b250bd97798ffd7443d9cb37003bc5c2a1df11c28c266583385291ce78606e4",
+    "source_sha256": "a79aad3d9d29c53b7b2d1583ca96746f1b05e64be2e2659d519fccd4d0b130ff"
+  },
+  {
+    "task": "8051/CAT5/TASK5B/TASK5B.1",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT5/TASK5B/TASK5B.1/Objects/firmware.hex",
+    "sha256": "d6962fce81473877beec1cf992626d535aa2b0eb0c08688b0210a148da7f99ca",
+    "source_sha256": "66e57e039ae40883ff354979cfcb83c97a5dbb2112aa1b8c63373fa1f655650d"
+  },
+  {
+    "task": "8051/CAT5/TASK5B/TASK5B.2",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT5/TASK5B/TASK5B.2/Objects/firmware.hex",
+    "sha256": "0690027fd042079c8924a8ac9dd0e594e3a42d543c07229f62b90293a48b3182",
+    "source_sha256": "3c75078b79dc9752898b4a01109f0cfd31dd347dac04b4da4d81160a8fc4a90e"
+  },
+  {
+    "task": "8051/CAT5/TASK5B/TASK5B.3",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT5/TASK5B/TASK5B.3/Objects/firmware.hex",
+    "sha256": "30bb6d4b700b5305e614ef22c103f3c7d36e7084cd04069f46cc8ffa6443a339",
+    "source_sha256": "1b564e3f31c563579496cbcbb1fc41a9156e3248411d40680e36c9726df54dd9"
+  },
+  {
+    "task": "8051/CAT5/TASK5C",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT5/TASK5C/Objects/firmware.hex",
+    "sha256": "036ab6f7d0aabbf7b0fbc760e03693f3854627ca55b2d0ad3cd353266d096c22",
+    "source_sha256": "d97a124b5906e9e50c144102b9bc2f16e639175543d4ee6e8262082917f92001"
+  },
+  {
+    "task": "8051/CAT6/TASK6A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT6/TASK6A/Objects/firmware.hex",
+    "sha256": "67b074a3610bd9abc4f20ff064e94c6282776786b5eb125854d343333061b991",
+    "source_sha256": "3b233524db6cd553b984eff26be1be15671f1c028bd268627d58ec8153c0ca0f"
+  },
+  {
+    "task": "8051/CAT6/TASK6B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT6/TASK6B/Objects/firmware.hex",
+    "sha256": "50300a36b5ddbd4466849cbd9dc7a0346cd54a9f3949781e26a8f2feee35c40a",
+    "source_sha256": "47ce692af842b23ef7e5db32185b339d0aac58ae870ffbee2a801f302520e6d0"
+  },
+  {
+    "task": "8051/CAT7/TASK7A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT7/TASK7A/Objects/firmware.hex",
+    "sha256": "d67b6e50e031a03f35e0499a2a6276a4b43b152c8cf291f4477e812a7a42d33d",
+    "source_sha256": "a038aec39c6369ec7a676628c270eef3da6332df5e8b426cdd9e03129c275bec"
+  },
+  {
+    "task": "8051/CAT7/TASK7B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT7/TASK7B/Objects/firmware.hex",
+    "sha256": "63e79695fbb7ba5eb682074e5515bfe18b4c1492dc24d491de34f5a1916824ae",
+    "source_sha256": "e5fd857fc4ae8c75ea56256badf09085dd3716958181f76e98777854636fe6e2"
+  },
+  {
+    "task": "8051/CAT7/TASK7C",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "SDCC 4.2.0; mechanically translated C51 syntax",
+    "artifact": "8051/CAT7/TASK7C/Objects/firmware.hex",
+    "sha256": "e5131e2e1ad103832d7a5a4ad0b5d936fa8fcfa9e2d65d21ed0aaa254486f000",
+    "source_sha256": "e41a259080c5e748efc99850b85779f7044e999a9b613e444cb58f54c6eb6e71"
+  },
+  {
+    "task": "STM32/CAT10/TASK10A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT10/TASK10A/Objects/firmware.hex",
+    "sha256": "40563310903acfa62b62631e61c147dec74b9a5347c840c0721fec4c4a9dd00b",
+    "source_sha256": "c58158a2d8a2604bf394d270baba248e7a703b44371f8cc05793b924ce86d667"
+  },
+  {
+    "task": "STM32/CAT10/TASK10B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT10/TASK10B/Objects/firmware.hex",
+    "sha256": "5d614ae6657bbf0b40e2795bc88553b5ff8b8c1567c4c9829f6e20726920f9e1",
+    "source_sha256": "6034c50cacc45a3dcae42ea2c78a61fc6e87e64a11065a5c088e06c87f17f77e"
+  },
+  {
+    "task": "STM32/CAT10/TASK10C",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT10/TASK10C/Objects/firmware.hex",
+    "sha256": "69813bcaa3d8b61ecac3fd7d3850c2dcee78164590e0adfd623b015d3c84b702",
+    "source_sha256": "a82dd67d20b63ae108fc94e6a91a8b5bf0d0756d142aecdd8c598928d9da5378"
+  },
+  {
+    "task": "STM32/CAT11/TASK11A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT11/TASK11A/Objects/firmware.hex",
+    "sha256": "c86d12dc922b0a769ead5f2d1f12f3073619a88c1bd58e32405f2a997ae64ddb",
+    "source_sha256": "bafbca65d908491f136b2162cf2a99223d16a3049ce6b3755f96da2c0a2b1881"
+  },
+  {
+    "task": "STM32/CAT11/TASK11B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT11/TASK11B/Objects/firmware.hex",
+    "sha256": "021de33901710db84786c981b76d507367f362b3a094faf3ad9dbd93f042f9d5",
+    "source_sha256": "2d14015563c5274ae97320ca60ac1c85ba3380231f3c1b66241fa2d2de931454"
+  },
+  {
+    "task": "STM32/CAT12/TASK12A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT12/TASK12A/Objects/firmware.hex",
+    "sha256": "d7da47238ff314ec77964bba766a24867290a52964aae03a25101c7519d94f44",
+    "source_sha256": "d2f48a7f8ee232039f70c12560632175002a437947fe9ed91f2ce6eae823fcf9"
+  },
+  {
+    "task": "STM32/CAT12/TASK12B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT12/TASK12B/Objects/firmware.hex",
+    "sha256": "a7f8ccd4297fa61b8ce84ddca366d17c74f9a5fbe47ee1673ef53a4429a8b824",
+    "source_sha256": "d7c798dc82404e1923335e7409334ec1b8e7eb35ee37dc4cf1d31abaccc218b6"
+  },
+  {
+    "task": "STM32/CAT12/TASK12C",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT12/TASK12C/Objects/firmware.hex",
+    "sha256": "c7a72e78f3cd98edb827255a86e87ea1f4f3043b65f18f48ad49d58f28a512ed",
+    "source_sha256": "466a529a60a2f03a047aede79d9fa443bb1af16df242e40939368bda7e7c1af9"
+  },
+  {
+    "task": "STM32/CAT13/TASK13",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT13/TASK13/Objects/firmware.hex",
+    "sha256": "39848ff506e3392f031d0a35b38783e8bfc789a9e7673d767ed4b3db0622171b",
+    "source_sha256": "afb18cdf6f3edce6535549aa8869dd16cacc2c2b302b9d2f7ee61974d61f35e7"
+  },
+  {
+    "task": "STM32/CAT8/TASK8A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT8/TASK8A/Objects/firmware.hex",
+    "sha256": "a547165feaa74a31a21104918b76db660e62160564d80090abcc2a886c6bd6a0",
+    "source_sha256": "5f7cbdf0e080bf5644eed580667f0c2427bf2d6a31cd004a40f6d21f7d641fde"
+  },
+  {
+    "task": "STM32/CAT8/TASK8B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT8/TASK8B/Objects/firmware.hex",
+    "sha256": "ae2509b8233f6c653181031edd22793bc96610a95ba7932e1374b770cab347ab",
+    "source_sha256": "6df842044553c16711afbe99f76896aeebbb324fe4e800bc158dd1dba7827701"
+  },
+  {
+    "task": "STM32/CAT8/TASK8C",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT8/TASK8C/Objects/firmware.hex",
+    "sha256": "5b395adbe984e112a2d1176ab1e9410667b3fb1e8f05c9b599a08b0694883cd0",
+    "source_sha256": "ee95b591e349894d7a713a23b260ddebdf12ca4fe002f5564bca71cf2831e963"
+  },
+  {
+    "task": "STM32/CAT9/TASK9A",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT9/TASK9A/Objects/firmware.hex",
+    "sha256": "ff2629c210d7e61879e882e50a855d6c7328cdbb5b9705d8f511ce3a5a3600c5",
+    "source_sha256": "f67117c928b254c1083290a08833eb9610bf922b64d3da444fb052d89fd2f00e"
+  },
+  {
+    "task": "STM32/CAT9/TASK9B",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT9/TASK9B/Objects/firmware.hex",
+    "sha256": "48aa2fef617f6be511756bbe8d7b2d02f8d79a3736a8d89cafe23ccd48edd914",
+    "source_sha256": "7e085f2d1ca2c336521c6c6f6517853e0fe81f20869487181da83489ed04f409"
+  }
+]
