@@ -3,7 +3,7 @@
 **LAKSHMI KARTHIK VEMULA** · **25011102113**
 Shiv Nadar University Chennai · Computer Science and Engineering
 
-This repository follows the supplied evaluation report's platform/CAT/task layout. CAT14 is excluded at the owner's request. The active scope is **27 tasks across 12 CAT assignments (CAT2–CAT13)**. The previous work remains under [Original_Work](Original_Work/README.md) and in Git history.
+This repository follows the supplied evaluation report's platform/CAT/task layout. CAT14 is excluded at the owner's request. The active scope is **27 tasks across 12 CAT assignments (CAT2–CAT13)**. Previous work remains recoverable through Git history.
 
 The task projects contain **attributed reference-derived implementations and documented corrections**. Student identity in this README identifies the owner and does not claim sole authorship or independent physical completion. Read [source provenance, permissions and vendor licenses](docs/ATTRIBUTION.md) before academic submission or further redistribution.
 
@@ -50,10 +50,6 @@ STM32/CAT8..CAT13/<TASK>/
   Objects/firmware.hex
   README.md
   circuit.svg
-Original_Work/           Previous source, diagrams, handouts and dependencies
-  CAT_02..CAT_13/        Includes CAT_10C; original numbering preserved
-  Common/               Original Bosch and ESP8266 integration
-  README.md
 docs/                   Provenance, mapping, build and validation records
 tools/build.py          Reproducible real firmware builds
 tools/validate.py       Report-pattern and integrity audit

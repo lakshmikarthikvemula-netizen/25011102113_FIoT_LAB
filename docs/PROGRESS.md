@@ -4,7 +4,7 @@
 
 - Confirmed owner name and registration: LAKSHMI KARTHIK VEMULA, 25011102113.
 - Applied owner authorization to modify the existing repository and exclude CAT14.
-- Preserved previous work under Original_Work and retained Git history.
+- Preserved previous work in Git history; removed the backup folder at the owner’s request.
 - Created all 27 agreed report-layout task paths, projects, documentation and circuit SVGs.
 - Recorded source provenance/vendor licenses and marked reference-derived code explicitly.
 - Replaced credential literals, avoided reference student identity and removed a local path.

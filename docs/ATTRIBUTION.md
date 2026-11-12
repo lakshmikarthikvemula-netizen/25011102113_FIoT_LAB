@@ -4,7 +4,7 @@ Student documentation belongs to LAKSHMI KARTHIK VEMULA, registration 2501110211
 
 ## Existing work
 
-`Original_Work/` preserves the repository contents from commit `901fc50b14ff2f9510b39a7a4db177333fa58b5c`, with a local path and unsupported verification claims corrected in documentation. The original versions remain in Git history. CAT handouts remain with that work; no new third-party handouts were imported.
+Previous repository work and its handouts remain recoverable from Git history, including commit `901fc50b14ff2f9510b39a7a4db177333fa58b5c`. The backup folder was removed at the owner’s request. Required Bosch code and its license are included directly in the active sensor project. No new third-party handouts were imported.
 
 ## Reference-derived task projects
 
@@ -38,6 +38,6 @@ These changes do not prove compliance with assignment requirements that were not
 - ST HAL/device files retain their original copyright and adjacent `LICENSE.txt` files (BSD-3-Clause and/or applicable original notices).
 - ARM CMSIS files retain their included license/notices. STM32F4 CMSIS includes `Drivers/CMSIS/LICENSE.txt`; STM32F1 files carry their own source notices, with device/HAL license files preserved.
 - Keil `STARTUP.A51` retains Keil copyright and package notices. It is reference-provided material, not newly authored startup code; use it under the applicable Keil terms. The tested SDCC build uses SDCC's startup instead.
-- Bosch BME280 SensorAPI v3.5.1 retains its BSD-3-Clause license in `Original_Work/Common/Bosch_BME280/LICENSE` and `STM32/CAT13/TASK13/Core/BOSCH_LICENSE`.
+- Bosch BME280 SensorAPI v3.5.1 retains its BSD-3-Clause license in `STM32/CAT13/TASK13/Core/BOSCH_LICENSE`.
 
 Personal student details and network credentials from the reference were not used as this student's details. Reference identification appears here solely to document provenance.

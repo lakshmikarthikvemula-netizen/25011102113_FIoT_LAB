@@ -60,4 +60,4 @@ See [recorded build and file checks](../../../docs/VALIDATION.md) for the result
 
 This task contains reference-derived source/project material, with documented corrections. It is not represented as solely student-authored code or as independently completed physical laboratory work. See [provenance and third-party notices](../../../docs/ATTRIBUTION.md). The circuit SVG and this task documentation were generated for this repository.
 
-BME280 acquisition uses the original repository’s `bme_lab` adapter and Bosch SensorAPI. The Bosch license is preserved in `Core/BOSCH_LICENSE`. The report’s single `TASK13` path is mapped from reference `TASK13A`; HTTP/Node-RED work remains in `Original_Work/CAT_12/`.
+BME280 acquisition uses the original repository’s `bme_lab` adapter and Bosch SensorAPI. The Bosch license is preserved in `Core/BOSCH_LICENSE`. The report’s single `TASK13` path is mapped from reference `TASK13A`; previous HTTP/Node-RED work remains recoverable from Git history.
