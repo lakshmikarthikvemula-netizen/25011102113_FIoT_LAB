@@ -3,7 +3,9 @@
 **LAKSHMI KARTHIK VEMULA** · **25011102113**
 Shiv Nadar University Chennai · Computer Science and Engineering
 
-This repository follows the supplied evaluation report's platform/CAT/task layout. CAT14 is excluded at the owner's request. The active scope is **27 tasks across 12 CAT assignments (CAT2–CAT13)**. Previous work remains recoverable through Git history.
+This repository follows the official Foundations-of-IoT evaluator layout: **29 projects across all 14 required CAT assignments (CAT2–CAT15)**. Existing correct work is preserved. Missing CAT14 and CAT15 projects use the user-designated Saketh reference with attribution.
+
+The unchanged official evaluator reports **29/29 projects, 206/206 file checks, Overall PASSED** on the corrected checkout. Markdown and PDF reports are under [docs/evaluation](docs/evaluation/). This evaluates file structure and README availability; real compile/link checks and hardware status are documented separately.
 
 The task projects contain **attributed reference-derived implementations and documented corrections**. Student identity in this README identifies the owner and does not claim sole authorship or independent physical completion. Read [source provenance, permissions and vendor licenses](docs/ATTRIBUTION.md) before academic submission or further redistribution.
 
@@ -27,6 +29,8 @@ The task projects contain **attributed reference-derived implementations and doc
 | STM32/CAT11 | [TASK11A](STM32/CAT11/TASK11A/README.md), [TASK11B](STM32/CAT11/TASK11B/README.md) |
 | STM32/CAT12 | [TASK12A](STM32/CAT12/TASK12A/README.md), [TASK12B](STM32/CAT12/TASK12B/README.md), [TASK12C](STM32/CAT12/TASK12C/README.md) |
 | STM32/CAT13 | [TASK13](STM32/CAT13/TASK13/README.md) |
+| STM32/CAT14 | [TASK14](STM32/CAT14/TASK14/README.md) |
+| STM32/CAT15 | [TASK15](STM32/CAT15/TASK15/README.md), [Node-RED dashboard](STM32/CAT15/TASK15/Node-RED/README.md) |
 
 ## Layout
 
@@ -37,8 +41,8 @@ The task projects contain **attributed reference-derived implementations and doc
   <TASK>.uvproj
   Objects/firmware.hex
   README.md
-  circuit.svg
-STM32/CAT8..CAT13/<TASK>/
+  circuit.png              # PDF-compatible rendering; SVG source retained
+STM32/CAT8..CAT15/<TASK>/
   <TASK>.ioc
   .mxproject
   Core/
@@ -49,7 +53,7 @@ STM32/CAT8..CAT13/<TASK>/
   GNU/memory.ld
   Objects/firmware.hex
   README.md
-  circuit.svg
+  circuit.png              # PDF-compatible rendering; SVG source retained
 docs/                   Provenance, mapping, build and validation records
 tools/build.py          Reproducible real firmware builds
 tools/validate.py       Report-pattern and integrity audit
@@ -62,6 +66,7 @@ CAT5B contains the required nested `TASK5B.1`, `TASK5B.2` and `TASK5B.3` folders
 ```sh
 python3 tools/build.py
 python3 tools/validate.py
+sh tests/run_mqtt_tests.sh
 ```
 
 Confirm board models and wiring against each task's schematic before flashing. GPIO mappings are derived from the configured source and have not been confirmed on a connected board. UART/ESP8266 examples need compatible 3.3 V signals, AT firmware and a suitable supply. Wi-Fi strings are placeholders; keep credentials out of Git.

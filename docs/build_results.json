@@ -241,5 +241,23 @@
     "artifact": "STM32/CAT9/TASK9B/Objects/firmware.hex",
     "sha256": "48aa2fef617f6be511756bbe8d7b2d02f8d79a3736a8d89cafe23ccd48edd914",
     "source_sha256": "7e085f2d1ca2c336521c6c6f6517853e0fe81f20869487181da83489ed04f409"
+  },
+  {
+    "task": "STM32/CAT14/TASK14",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT14/TASK14/Objects/firmware.hex",
+    "sha256": "2f87b0fb03bd252cf3139f4ea49a4b26252d480ba3ee0ac3cd52898eaa236264",
+    "source_sha256": "0e5aa61056bc82953715cb0d17e914426148daf19a80752aa586a6778e6f270f"
+  },
+  {
+    "task": "STM32/CAT15/TASK15",
+    "status": "PASS",
+    "hardware": "NOT VERIFIED",
+    "toolchain": "GNU Arm Embedded 12.2.1; soft-float",
+    "artifact": "STM32/CAT15/TASK15/Objects/firmware.hex",
+    "sha256": "5c0e9403d4af87c917126ec8166e85db32347dd46ee88cee2e93927e06b653a5",
+    "source_sha256": "22e672415f670d61c1e0d9f543902f082b504d156b1344831ffce4ee8ced7290"
   }
 ]

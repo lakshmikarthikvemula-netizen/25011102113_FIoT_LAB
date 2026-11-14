@@ -3,7 +3,7 @@
 The automated build uses Python 3, SDCC 4.2.0 and GNU Arm Embedded GCC 12.2.1 with matching binutils and newlib 3.3.0. Install the appropriate packages for your OS. On Debian 12 these are `sdcc`, `sdcc-libraries`, `gcc-arm-none-eabi`, `binutils-arm-none-eabi`, `libnewlib-dev` and `libnewlib-arm-none-eabi`.
 
 ```sh
-python3 tools/build.py                  # all 27 tasks
+python3 tools/build.py                  # all 29 tasks
 python3 tools/build.py 8051/CAT6        # both UART experiments
 python3 tools/build.py STM32/CAT13      # sensor acquisition
 python3 tools/validate.py
@@ -43,3 +43,7 @@ Keil MDK compilation and CubeMX regeneration have **NOT VERIFIED** status. CubeM
 Confirm exact board revision, crystal/clock source, pin routing, LED and button polarity, port drive limits, reset circuit, ESP8266 firmware/baud rate and supply, BME280 address and I2C pull-ups. Test UART echo and overflow, modem responses, HTTP request handling, LCD/keypad movement, PWM/clock frequency and motor operation. Do not report these as observed results until they are actually measured.
 
 Wi-Fi names/passwords are placeholders. Configure them locally without committing credentials. The repository retains its existing public visibility; no new private repository was created.
+
+## MQTT regression tests
+
+Run `sh tests/run_mqtt_tests.sh` with a host C compiler supporting AddressSanitizer and UndefinedBehaviorSanitizer. Both CAT14 and CAT15 transports are tested with deterministic mock UART responses. No device or network is required.

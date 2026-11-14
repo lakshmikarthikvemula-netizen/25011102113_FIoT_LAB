@@ -15,7 +15,7 @@ Use board power and common GND. STM32 GPIO signals use 3.3 V logic. Verify suppl
 
 ## Circuit diagram
 
-![Software-derived pin connection schematic](circuit.svg)
+![Software-derived pin connection schematic](circuit.png)
 
 This schematic records the configured software pins. Actual board wiring, component ratings and timing have **NOT VERIFIED** status.
 

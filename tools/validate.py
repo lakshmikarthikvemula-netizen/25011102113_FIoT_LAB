@@ -18,6 +18,11 @@ def ihex(path):
 def audit():
  builds={r['task']:r for r in json.loads((ROOT/'docs/build_results.json').read_text())}
  tasks=[];errors=[]
+ for platform, cats in [('8051',range(2,8)),('STM32',range(8,16))]:
+  for cat in cats:
+   prefix=f'{platform}/CAT{cat}/'
+   if not (ROOT/platform/f'CAT{cat}').is_dir() or not any(task.startswith(prefix) for task in TASKS):
+    errors.append(prefix+': required CAT missing from filesystem or manifest')
  for task in TASKS:
   d=ROOT/task
   if task.startswith('8051'):
@@ -32,13 +37,18 @@ def audit():
   for project in list(d.glob('*.uvproj'))+list(d.glob('*.uvprojx'))+list((d/'MDK-ARM').glob('*.uvprojx')):
    for node in ET.parse(project).findall('.//FilePath'):
     if node.text and not (project.parent/node.text.replace('\\','/')).is_file():errors.append(task+': missing Keil source '+node.text)
-  tasks.append({'task':task,'checks':checks,'README':'PASS' if checks['README'] else 'FAIL','circuit':'PASS' if (d/'circuit.svg').is_file() else 'FAIL','compilation':'PASS' if compiled else 'FAIL','hardware':'NOT VERIFIED','overall':'NOT VERIFIED' if compiled and all(checks.values()) else 'FAIL'})
+  tasks.append({'task':task,'checks':checks,'README':'PASS' if checks['README'] else 'FAIL','circuit':'PASS' if (d/'circuit.png').is_file() else 'FAIL','compilation':'PASS' if compiled else 'FAIL','hardware':'NOT VERIFIED','overall':'NOT VERIFIED' if compiled and all(checks.values()) else 'FAIL'})
  for p in ROOT.rglob('*.md'):
   if '.git' in p.parts or '.build' in p.parts:continue
-  for link in re.findall(r'!?\[[^\]]*\]\(([^\s)]+)(?:\s+"[^"]*")?\)',p.read_text(errors='replace')):
-   link=urllib.parse.unquote(link.split('#')[0])
-   if not link or re.match(r'\w+://|mailto:',link):continue
-   if not (p.parent/link).exists():errors.append(str(p.relative_to(ROOT))+': broken local link '+link)
+  base=p.parent
+  generated_report=p.name=='evaluation_report.md' and 'evaluation' in p.parts
+  for line in p.read_text(errors='replace').splitlines():
+   if generated_report and line.startswith(('## 8051/','## STM32/')):
+    base=ROOT/line[3:].strip()
+   for link in re.findall(r'!?\[[^\]]*\]\(([^\s)]+)(?:\s+"[^"]*")?\)',line):
+    link=urllib.parse.unquote(link.split('#')[0])
+    if not link or re.match(r'\w+://|mailto:',link):continue
+    if not (base/link).exists():errors.append(str(p.relative_to(ROOT))+': broken local link '+link)
  # Deliberately scoped scan: known leaked credentials/other student IDs, plus common token formats.
  patterns=[r'\b25\d{9}\b',r'gh[pousr]_[A-Za-z0-9]{20,}',r'github_pat_[A-Za-z0-9_]{20,}',r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----']
  for p in ROOT.rglob('*'):
@@ -49,7 +59,7 @@ def audit():
    text=re.sub(r'https://github.com/[^\s)]+','',text)
    text=text.replace('25011102113','')
    if any(re.search(pattern,text) for pattern in patterns):errors.append(str(p.relative_to(ROOT))+': privacy/secret pattern needs review')
- results={'tasks':tasks,'tasks_count':len(tasks),'file_checks_passed':sum(sum(t['checks'].values()) for t in tasks),'file_checks_total':sum(len(t['checks']) for t in tasks),'errors':errors,'official_evaluator':'NOT VERIFIED','hardware':'NOT VERIFIED','scope':'CAT14 excluded by owner; no hardware/simulator/Keil/CubeMX execution asserted'}
+ results={'tasks':tasks,'tasks_count':len(tasks),'file_checks_passed':sum(sum(t['checks'].values()) for t in tasks),'file_checks_total':sum(len(t['checks']) for t in tasks),'errors':errors,'official_evaluator':'See docs/evaluation for original unmodified evaluator reports','hardware':'NOT VERIFIED','scope':'CAT2-CAT15; no hardware/simulator/Keil/CubeMX execution asserted'}
  (ROOT/'docs/validation_results.json').write_text(json.dumps(results,indent=2)+'\n')
  print(json.dumps({k:v for k,v in results.items() if k!='tasks'},indent=2))
  return results

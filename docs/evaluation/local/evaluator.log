@@ -1,0 +1,332 @@
+TASK PATH: /workspace/work/target/8051/CAT2/TASK2B
+TASK NAME: 8051/CAT2/TASK2B
+TASK PATH: /workspace/work/target/8051/CAT3/TASK3A
+TASK NAME: 8051/CAT3/TASK3A
+TASK PATH: /workspace/work/target/8051/CAT4/TASK4A
+TASK NAME: 8051/CAT4/TASK4A
+TASK PATH: /workspace/work/target/8051/CAT5/TASK5A
+TASK NAME: 8051/CAT5/TASK5A
+TASK PATH: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.1
+TASK NAME: 8051/CAT5/TASK5B/TASK5B.1
+TASK PATH: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.2
+TASK NAME: 8051/CAT5/TASK5B/TASK5B.2
+TASK PATH: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.3
+TASK NAME: 8051/CAT5/TASK5B/TASK5B.3
+TASK PATH: /workspace/work/target/8051/CAT5/TASK5C
+TASK NAME: 8051/CAT5/TASK5C
+TASK PATH: /workspace/work/target/8051/CAT6/TASK6A
+TASK NAME: 8051/CAT6/TASK6A
+TASK PATH: /workspace/work/target/8051/CAT6/TASK6B
+TASK NAME: 8051/CAT6/TASK6B
+TASK PATH: /workspace/work/target/8051/CAT7/TASK7A
+TASK NAME: 8051/CAT7/TASK7A
+TASK PATH: /workspace/work/target/8051/CAT7/TASK7B
+TASK NAME: 8051/CAT7/TASK7B
+TASK PATH: /workspace/work/target/8051/CAT7/TASK7C
+TASK NAME: 8051/CAT7/TASK7C
+TASK PATH: /workspace/work/target/STM32/CAT10/TASK10A
+TASK NAME: STM32/CAT10/TASK10A
+TASK PATH: /workspace/work/target/STM32/CAT10/TASK10B
+TASK NAME: STM32/CAT10/TASK10B
+TASK PATH: /workspace/work/target/STM32/CAT10/TASK10C
+TASK NAME: STM32/CAT10/TASK10C
+TASK PATH: /workspace/work/target/STM32/CAT11/TASK11A
+TASK NAME: STM32/CAT11/TASK11A
+TASK PATH: /workspace/work/target/STM32/CAT11/TASK11B
+TASK NAME: STM32/CAT11/TASK11B
+TASK PATH: /workspace/work/target/STM32/CAT12/TASK12A
+TASK NAME: STM32/CAT12/TASK12A
+TASK PATH: /workspace/work/target/STM32/CAT12/TASK12B
+TASK NAME: STM32/CAT12/TASK12B
+TASK PATH: /workspace/work/target/STM32/CAT12/TASK12C
+TASK NAME: STM32/CAT12/TASK12C
+TASK PATH: /workspace/work/target/STM32/CAT13/TASK13
+TASK NAME: STM32/CAT13/TASK13
+TASK PATH: /workspace/work/target/STM32/CAT14/TASK14
+TASK NAME: STM32/CAT14/TASK14
+TASK PATH: /workspace/work/target/STM32/CAT15/TASK15
+TASK NAME: STM32/CAT15/TASK15
+TASK PATH: /workspace/work/target/STM32/CAT8/TASK8A
+TASK NAME: STM32/CAT8/TASK8A
+TASK PATH: /workspace/work/target/STM32/CAT8/TASK8B
+TASK NAME: STM32/CAT8/TASK8B
+TASK PATH: /workspace/work/target/STM32/CAT8/TASK8C
+TASK NAME: STM32/CAT8/TASK8C
+TASK PATH: /workspace/work/target/STM32/CAT9/TASK9A
+TASK NAME: STM32/CAT9/TASK9A
+TASK PATH: /workspace/work/target/STM32/CAT9/TASK9B
+TASK NAME: STM32/CAT9/TASK9B
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT2/TASK2B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT2/TASK2B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT3/TASK3A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT3/TASK3A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT4/TASK4A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT4/TASK4A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT5/TASK5A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT5/TASK5A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.1
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.1/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.2
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.2/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.3
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT5/TASK5B/TASK5B.3/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT5/TASK5C
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT5/TASK5C/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT6/TASK6A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT6/TASK6A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT6/TASK6B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT6/TASK6B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT7/TASK7A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT7/TASK7A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT7/TASK7B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT7/TASK7B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/8051/CAT7/TASK7C
+Image path from README: circuit.png
+Full image path: /workspace/work/target/8051/CAT7/TASK7C/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT10/TASK10A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT10/TASK10A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT10/TASK10B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT10/TASK10B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT10/TASK10C
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT10/TASK10C/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT11/TASK11A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT11/TASK11A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT11/TASK11B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT11/TASK11B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT12/TASK12A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT12/TASK12A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT12/TASK12B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT12/TASK12B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT12/TASK12C
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT12/TASK12C/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT13/TASK13
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT13/TASK13/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT14/TASK14
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT14/TASK14/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT15/TASK15
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT15/TASK15/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT8/TASK8A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT8/TASK8A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT8/TASK8B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT8/TASK8B/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT8/TASK8C
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT8/TASK8C/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT9/TASK9A
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT9/TASK9A/circuit.png
+File exists: True
+-------------------
+
+
+--- IMAGE DEBUG ---
+Repository: /workspace/work/target
+Current task: /workspace/work/target/STM32/CAT9/TASK9B
+Image path from README: circuit.png
+Full image path: /workspace/work/target/STM32/CAT9/TASK9B/circuit.png
+File exists: True
+-------------------
+
+
+PDF report saved to:
+/workspace/work/reports/local/evaluation_report.pdf
+
+========== EVALUATION SUMMARY ==========
+Tasks discovered: 29
+Tasks passed: 29
+Tasks failed: 0
+File checks passed: 206/206
+Overall status: PASSED
+
+Report saved to:
+/workspace/work/reports/local/evaluation_report.md

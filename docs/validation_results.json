@@ -459,13 +459,49 @@
       "compilation": "PASS",
       "hardware": "NOT VERIFIED",
       "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT14/TASK14",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
+    },
+    {
+      "task": "STM32/CAT15/TASK15",
+      "checks": {
+        "ioc": true,
+        "mxproject": true,
+        "Core": true,
+        "Drivers": true,
+        "MDK-ARM": true,
+        "Keil project": true,
+        "startup": true,
+        "README": true
+      },
+      "README": "PASS",
+      "circuit": "PASS",
+      "compilation": "PASS",
+      "hardware": "NOT VERIFIED",
+      "overall": "NOT VERIFIED"
     }
   ],
-  "tasks_count": 27,
-  "file_checks_passed": 190,
-  "file_checks_total": 190,
+  "tasks_count": 29,
+  "file_checks_passed": 206,
+  "file_checks_total": 206,
   "errors": [],
-  "official_evaluator": "NOT VERIFIED",
+  "official_evaluator": "See docs/evaluation for original unmodified evaluator reports",
   "hardware": "NOT VERIFIED",
-  "scope": "CAT14 excluded by owner; no hardware/simulator/Keil/CubeMX execution asserted"
+  "scope": "CAT2-CAT15; no hardware/simulator/Keil/CubeMX execution asserted"
 }

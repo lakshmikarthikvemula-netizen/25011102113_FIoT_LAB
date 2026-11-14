@@ -15,7 +15,7 @@ VCC pin 40 to regulated 5 V; GND pin 20; EA pin 31 HIGH for internal Flash. Use 
 
 ## Circuit diagram
 
-![Software-derived pin connection schematic](circuit.svg)
+![Software-derived pin connection schematic](circuit.png)
 
 This schematic records the configured software pins. Actual board wiring, component ratings and timing have **NOT VERIFIED** status.
 

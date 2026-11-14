@@ -1,0 +1,115 @@
+
+Downloading student repository...
+[PASS] Repository downloaded.
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT2/TASK2B
+TASK NAME: 8051/CAT2/TASK2B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT3/TASK3A
+TASK NAME: 8051/CAT3/TASK3A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT4/TASK4A
+TASK NAME: 8051/CAT4/TASK4A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT5/TASK5A
+TASK NAME: 8051/CAT5/TASK5A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT5/TASK5B/TASK5B.1
+TASK NAME: 8051/CAT5/TASK5B/TASK5B.1
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT5/TASK5B/TASK5B.2
+TASK NAME: 8051/CAT5/TASK5B/TASK5B.2
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT5/TASK5B/TASK5B.3
+TASK NAME: 8051/CAT5/TASK5B/TASK5B.3
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT5/TASK5C
+TASK NAME: 8051/CAT5/TASK5C
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT6/TASK6A
+TASK NAME: 8051/CAT6/TASK6A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT6/TASK6B
+TASK NAME: 8051/CAT6/TASK6B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT7/TASK7A
+TASK NAME: 8051/CAT7/TASK7A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT7/TASK7B
+TASK NAME: 8051/CAT7/TASK7B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/8051/CAT7/TASK7C
+TASK NAME: 8051/CAT7/TASK7C
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT10/TASK10A
+TASK NAME: STM32/CAT10/TASK10A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT10/TASK10B
+TASK NAME: STM32/CAT10/TASK10B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT10/TASK10C
+TASK NAME: STM32/CAT10/TASK10C
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT11/TASK11A
+TASK NAME: STM32/CAT11/TASK11A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT11/TASK11B
+TASK NAME: STM32/CAT11/TASK11B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT12/TASK12A
+TASK NAME: STM32/CAT12/TASK12A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT12/TASK12B
+TASK NAME: STM32/CAT12/TASK12B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT12/TASK12C
+TASK NAME: STM32/CAT12/TASK12C
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT13/TASK13
+TASK NAME: STM32/CAT13/TASK13
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT8/TASK8A
+TASK NAME: STM32/CAT8/TASK8A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT8/TASK8B
+TASK NAME: STM32/CAT8/TASK8B
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT8/TASK8C
+TASK NAME: STM32/CAT8/TASK8C
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT9/TASK9A
+TASK NAME: STM32/CAT9/TASK9A
+TASK PATH: /tmp/tmpobrwumkn/student_repo/STM32/CAT9/TASK9B
+TASK NAME: STM32/CAT9/TASK9B
+
+--- IMAGE DEBUG ---
+Repository: /tmp/tmpobrwumkn/student_repo
+Current task: /tmp/tmpobrwumkn/student_repo/8051/CAT2/TASK2B
+Image path from README: circuit.svg
+Full image path: /tmp/tmpobrwumkn/student_repo/8051/CAT2/TASK2B/circuit.svg
+File exists: True
+-------------------
+
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 649, in __init__
+    self._image = self._read_image(self.fp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 666, in _read_image
+    return Image.open(fp)
+           ^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/Image.py", line 3730, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7f3078b95f80>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/work/evaluator/evaluate.py", line 907, in <module>
+    if not main():
+           ^^^^^^
+  File "/workspace/work/evaluator/evaluate.py", line 898, in main
+    return generate_report(repository, repository_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/work/evaluator/evaluate.py", line 541, in generate_report
+    generate_pdf(
+  File "/workspace/work/evaluator/evaluate.py", line 802, in generate_pdf
+    max_width / img.imageWidth,
+                ^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 504, in __getattr__
+    self._setup_inner()
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 461, in _setup_inner
+    img = self._img
+          ^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/platypus/flowables.py", line 498, in __getattr__
+    self._img = ImageReader(self._file)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 649, in __init__
+    self._image = self._read_image(self.fp)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/reportlab/lib/utils.py", line 666, in _read_image
+    return Image.open(fp)
+           ^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/PIL/Image.py", line 3730, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: 
+fileName='/tmp/tmpobrwumkn/student_repo/8051/CAT2/TASK2B/circuit.svg' identity=[ImageReader@0x7f3078b6eea0 filename='/tmp/tmpobrwumkn/student_repo/8051/CAT2/TASK2B/circuit.svg'] cannot identify image file <_io.BytesIO object at 0x7f3078b95f80>

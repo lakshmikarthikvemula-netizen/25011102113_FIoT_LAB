@@ -1,24 +1,11 @@
-# Migration and scope
+# Current scope and migration
 
-The owner authorized modifying the existing `25011102113_FIoT_LAB` repository, confirmed the registration number (without the extra zero), selected the report's platform/CAT/task layout and explicitly excluded CAT14. The existing public visibility is unchanged. Git history preserves earlier versions. The backup folder was removed at the owner’s request; required active-project dependencies remain in the platform folders.
+The current request supersedes the checkout's previous CAT14 exclusion. The official evaluator requires 8051/CAT2–CAT7 and STM32/CAT8–CAT15. All 27 existing projects were preserved and two complete attributed projects were added at `STM32/CAT14/TASK14` and `STM32/CAT15/TASK15`, giving 29 projects and 206 file checks. The evaluator does not prescribe a fixed number of subtasks per CAT.
 
-The supplied report discovered 28 tasks and performed 198 file checks. With CAT14 explicitly excluded, the active manifest has **27 tasks, 12 distinct CAT numbers (2–13), and 190 file checks**. This is the requested scope adjustment, not a claim that the original 28-task evaluator will pass unchanged. An evaluator that still requires CAT14 will report it missing.
+Baseline commit: `ed1a08429539d9cc621172e01fc2a3bec137ac37`. Backup branch: `backup/pre-evaluator-fixes-20261114`. Older work remains in Git history. No force push is used.
 
-| Previous folder | Corresponding subject in report layout |
-|---|---|
-| CAT_02 | 8051/CAT2 |
-| CAT_03 | 8051/CAT3 |
-| CAT_04 and CAT_08 | 8051/CAT4 keypad/display topics; original files available in Git history |
-| CAT_05 | 8051/CAT5 |
-| CAT_06 | 8051/CAT6 |
-| CAT_07 | 8051/CAT7 |
-| CAT_09 | STM32/CAT9 UART topics |
-| CAT_10 | STM32/CAT10 modem topics |
-| CAT_10C | STM32/CAT11 HTTP topics |
-| CAT_11 | STM32/CAT12 NUCLEO GPIO topics |
-| CAT_12 | STM32/CAT13 sensor topics; original HTTP/Node-RED code available in Git history |
-| CAT_13 | Original MQTT work available in Git history; no CAT14 added |
+The baseline had all 190 discovered-project file checks passing but lacked CAT14/CAT15 and therefore failed overall. Its PDF generation crashed because ReportLab cannot decode the referenced SVG circuits. Each existing SVG now has a real PNG rendering and task README links point to PNG; SVG originals are retained. All previous firmware sources remain unchanged.
 
-Report paths identify structure; they do not establish equivalence of all academic tasks. The task READMEs follow actual implementation behavior, because some reference README titles conflicted with application sources. Reference projects remain attributed and their license/academic permission status is documented in ATTRIBUTION.md.
+The donor CAT15 implementation was adapted for both missing CATs; its MQTT defects were corrected rather than importing nonworking CAT14 skeletons. Donor provenance is recorded in ATTRIBUTION.md. New complete projects contain actual Core/Drivers sources, CubeMX metadata, Keil configuration and startup, GNU build support, wiring diagrams and freshly compiled Intel HEX files.
 
-No official evaluator executable was supplied. The repository validator reproduces the report's documented file patterns, validates Intel HEX checksums and source/artifact hashes, checks project-file references and local Markdown links, and writes its own validation record. It is not presented as the official evaluator.
+No handouts exist in the current checkout, so assignment-specific equivalence beyond available source and reference documentation remains unverified. No hardware evidence is fabricated.

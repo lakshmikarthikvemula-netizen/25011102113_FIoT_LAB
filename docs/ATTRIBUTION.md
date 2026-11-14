@@ -12,7 +12,7 @@ At the owner's explicit request, the report-layout task projects were adapted fr
 
 - Source: https://github.com/thanishq-bvrm/25011102018_FIoT_LAB
 - Source commit: `a3af69988a16451a682e46a2dae72dcd1023d181`
-- Scope: the 27 task paths in `task_paths.json`, excluding CAT14. The report's `STM32/CAT13/TASK13` is adapted from reference `STM32/CAT13/TASK13A`.
+- Scope: the 27 pre-existing task paths through CAT13. The report's `STM32/CAT13/TASK13` is adapted from reference `STM32/CAT13/TASK13A`.
 
 The source repository has no root license granting general reuse of student-authored application code or documentation. Public availability is not a license. Importing it at the owner's request does not establish the reference author's permission or an academic right to submit it. These projects are identified as reference-derived study/adaptation material; obtain the necessary author/instructor permission before submitting them as laboratory work or redistributing them further. No blanket license is asserted over these materials.
 
@@ -41,3 +41,11 @@ These changes do not prove compliance with assignment requirements that were not
 - Bosch BME280 SensorAPI v3.5.1 retains its BSD-3-Clause license in `STM32/CAT13/TASK13/Core/BOSCH_LICENSE`.
 
 Personal student details and network credentials from the reference were not used as this student's details. Reference identification appears here solely to document provenance.
+
+## CAT14 and CAT15 additions (14 November 2026)
+
+At the user's explicit request, added material from https://github.com/saketh3159/25011102092_FIoT_LAB at commit `1eb9b35fc7c64b5af9bed676f3a492881984d5ef`.
+
+Both new projects derive from `STM32/CAT15/TASK15`. The donor CAT14 skeleton only checked sensor presence and sent ping bytes, so its unverified telemetry claims and incomplete subtask implementations were not copied. CAT14 now adapts the complete sensor project with PB8/PB9 I2C wiring. CAT15 uses PB6/PB7. Replaced unsafe polling/interrupt buffer handling with a bounded polling MQTT transport, checked CONNACK, variable Remaining Length encoding, input bounds, finite timeouts, and no stale-sample publishing. Added GNU startup/linker files from this repository's existing F401 project and retained Bosch license notices. New pin diagrams, documentation, host regression tests and the demo-labeled Node-RED dashboard were created for this repository. No donor hardware-success claims or screenshots are presented as this owner's measurements.
+
+ESPLib's original author is Can Guveren (2022); the small public interface is adapted, while the new transport implementation is documented in source. Existing ST/ARM/Bosch notices are retained. No new blanket license or sole-authorship claim is made for donor-derived material.

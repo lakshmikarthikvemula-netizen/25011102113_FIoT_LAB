@@ -46,3 +46,11 @@ Desktop.ini
 **/wifi_config.h
 .build/
 __pycache__/
+
+# Node-RED dependencies and local runtime state
+**/Node-RED/node_modules/
+**/Node-RED/.config*
+**/Node-RED/.sessions*
+**/Node-RED/flows_cred.json
+**/Node-RED/.flows*.backup
+**/Node-RED/node_modules.backup/

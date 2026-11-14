@@ -1,46 +1,24 @@
-# Validation record
+# Validation — 14 November 2026
 
-Recorded on 12 November 2026 for the requested report layout, excluding CAT14.
+Scope: **29 projects, 14 required CAT assignments (CAT2–CAT15)**.
 
-- Scope: 27 tasks, 12 CAT numbers (2–13).
-- Report-pattern file checks: **190/190 PASS**.
-- Fresh compile/link builds: **27/27 PASS** — 13 SDCC 8051 and 14 GNU ARM STM32 builds.
-- Intel HEX checksums, main-source/artifact SHA-256, Keil source-file paths and local Markdown targets: **PASS**.
-- Task README files and source-derived circuit SVG files: **27/27 present**.
-- Keil C51/MDK, CubeMX regeneration, simulator execution and physical hardware: **NOT VERIFIED**.
-- Official evaluator execution: **NOT VERIFIED**; only its PDF report was supplied.
+| Check | Baseline | Corrected checkout |
+|---|---|---|
+| Required CAT folders | 12/14; CAT14/CAT15 missing | 14/14 |
+| Official discovered projects | 27/27 pass | 29/29 pass |
+| Official file checks | 190/190 | 206/206 |
+| Official overall | FAILED | PASSED |
+| Official PDF generation | Crashed on circuit.svg | Generated successfully |
+| Firmware builds in this session | Not executed before corrections | 29/29 compile/link PASS |
+| MQTT host regression tests | Not present | PASS for both new projects, ASan/UBSan |
+| Hardware, simulator, Keil, CubeMX | Unverified | Unverified |
 
-The original PDF has 28 tasks/198 checks. CAT14 accounts for the excluded task and 8 checks; an unchanged official evaluator requiring CAT14 would still fail that requirement. Overall academic/hardware completion remains NOT VERIFIED.
+Official evaluator source: https://github.com/Shrinidhi-Vyairavi-NP/Foundations-of-IoT-Evaluator at `8804159cef86ac7a578e611c6179b3859df0363f`. Neither the evaluator nor its tests were edited. The initial run used its CLI against the original public target. The local corrected-checkout run calls its original `generate_report` directly. A final CLI run against the pushed public repository records the final committed result.
 
-## CAT summary
+Reports: [official evaluation files](evaluation/). The initial Markdown is preserved exactly. No initial PDF exists because the original evaluator failed while reading an SVG; the complete initial stderr/traceback is retained. No replacement initial PDF was invented.
 
-| CAT | Required Files | README | Circuit Diagram | Compilation | Hardware Verification | Overall Status |
-|---|---|---|---|---|---|---|
-| CAT2 (1 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT3 (1 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT4 (1 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT5 (5 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT6 (2 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT7 (3 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT8 (3 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT9 (2 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT10 (3 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT11 (2 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT12 (3 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
-| CAT13 (1 tasks) | PASS | PASS | PASS | PASS | NOT VERIFIED | NOT VERIFIED |
+Compilation evidence: [build_results.json](build_results.json), sanitized logs in [build_logs](build_logs/), and tracked `Objects/firmware.hex` in every task. The 13 8051 builds mechanically translate Keil syntax to SDCC; 16 STM32 builds use GNU Arm. These results do not establish Keil compatibility or runtime behavior.
 
-Compilation PASS means a real complete firmware link using the toolchain documented in BUILDING.md. It does not mean the Keil project was executed or that the implementation behaves correctly on a board. Circuit PASS means the SVG exists and is linked; electrical/physical verification is pending.
+Integrity evidence: [validation_results.json](validation_results.json). The local audit checks file patterns, Intel HEX record checksums, source/artifact hashes, Keil source references, image presence, local Markdown links, and scoped token/private-key patterns. Official file checks do not compile sources, evaluate README prose or prove circuit correctness.
 
-## Evidence
-
-- Machine-readable checks: [validation_results.json](validation_results.json).
-- Builds and source/firmware hashes: [build_results.json](build_results.json).
-- Sanitized compiler/linker transcripts: [build_logs](build_logs/).
-- Scope and numbering: [MIGRATION.md](MIGRATION.md).
-- Source permissions and attribution: [ATTRIBUTION.md](ATTRIBUTION.md).
-
-## Remaining checks
-
-Physical pin/board confirmation, measured timing, serial and RX overflow tests, modem AT-response verification, HTTP parsing/integration tests and real sensor readings remain unverified. The reference modem/HTTP examples are retained as attributed study implementations; the build result is not a claim of robust network behavior. Source-reference permission and instructor acceptance must be established before academic submission.
-
-The credential scan is a scoped check for tokens, private keys and unrelated student IDs; it is not a guarantee that every possible secret format is detectable. Known reference Wi-Fi literals were replaced with placeholders. The existing repository is public and remains public.
+MQTT tests: `sh tests/run_mqtt_tests.sh`. The mock UART checks exact CONNECT/PUBLISH bytes, broker rejection, two-byte Remaining Length, oversized input, invalid QoS/topic/AT arguments and finite timeout. No broker receives test traffic. Live broker delivery, physical wiring, electrical accuracy and assignment-handout compliance remain unverified.

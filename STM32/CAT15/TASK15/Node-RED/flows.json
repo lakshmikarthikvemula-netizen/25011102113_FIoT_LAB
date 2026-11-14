@@ -1,0 +1,178 @@
+[
+  {
+    "id": "f15_cat15",
+    "type": "tab",
+    "label": "CAT15 BME280 monitor",
+    "disabled": false,
+    "info": "Local demo input is labeled. Enable MQTT input and disable demo before live use."
+  },
+  {
+    "id": "f15_base",
+    "type": "ui-base",
+    "name": "FIoT CAT15",
+    "path": "/dashboard",
+    "includeClientData": true,
+    "acceptsClientConfig": [],
+    "showPathInSidebar": false,
+    "headerContent": "page",
+    "navigationStyle": "default",
+    "titleBarStyle": "default"
+  },
+  {
+    "id": "f15_theme",
+    "type": "ui-theme",
+    "name": "Environmental",
+    "colors": {
+      "surface": "#ffffff",
+      "primary": "#176b70",
+      "bgPage": "#edf2f4",
+      "groupBg": "#ffffff",
+      "groupOutline": "#d9e5e7"
+    },
+    "sizes": {
+      "pagePadding": "24px",
+      "groupGap": "12px",
+      "groupBorderRadius": "12px",
+      "widgetGap": "12px"
+    }
+  },
+  {
+    "id": "f15_page",
+    "type": "ui-page",
+    "name": "CAT15 \u00b7 Environmental telemetry",
+    "ui": "f15_base",
+    "path": "/environment",
+    "icon": "thermometer",
+    "layout": "grid",
+    "theme": "f15_theme",
+    "order": 1,
+    "visible": "true",
+    "disabled": "false",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ]
+  },
+  {
+    "id": "f15_group",
+    "type": "ui-group",
+    "name": "Sensor overview",
+    "page": "f15_page",
+    "width": 12,
+    "height": 1,
+    "order": 1,
+    "showTitle": false,
+    "visible": true,
+    "disabled": false,
+    "groupType": "default"
+  },
+  {
+    "id": "f15_view",
+    "type": "ui-template",
+    "z": "f15_cat15",
+    "group": "f15_group",
+    "name": "Environmental monitor",
+    "order": 1,
+    "width": 12,
+    "height": 12,
+    "format": "<template><section class=\"environment\"><div class=\"eyebrow\">FOUNDATIONS OF IoT / CAT15</div><h1>Environmental monitor</h1><p>STM32F401RE \u00b7 BME280 \u00b7 ESP8266 \u00b7 MQTT</p><div class=\"notice\">{{ msg?.demo ? 'DEMO DATA \u2014 interface preview, not hardware measurements' : (msg?.payload ? 'MQTT INPUT \u2014 verify publisher and physical setup independently' : 'WAITING FOR DATA \u2014 no measurements received') }}</div><div class=\"metrics\"><article><span>Temperature</span><strong>{{ msg?.payload?.temperature?.toFixed(2) ?? '\u2014' }}<small> \u00b0C</small></strong></article><article><span>Relative humidity</span><strong>{{ msg?.payload?.humidity?.toFixed(2) ?? '\u2014' }}<small> %RH</small></strong></article><article><span>Pressure</span><strong>{{ msg?.payload?.pressure?.toFixed(2) ?? '\u2014' }}<small> hPa</small></strong></article></div><h2>Telemetry path</h2><div class=\"pipeline\">BME280 \u2192 STM32 \u2192 ESP8266 \u2192 MQTT \u2192 Node-RED</div><p class=\"topic\">fiot/25011102113/cat15/environment</p><div class=\"foot\">Received: {{ msg?.received ?? 'Waiting' }}<br>Registration: 25011102113 \u00b7 LAKSHMI KARTHIK VEMULA</div></section></template><style>.environment{padding:30px;color:#143344;font-family:Arial,sans-serif}.eyebrow{font-size:12px;letter-spacing:3px;color:#367575}h1{font-size:38px;margin:12px 0}p{color:#527078}.notice{padding:16px 20px;background:#fff2cc;border-left:4px solid #d89b18;margin:30px 0;font-weight:600}.metrics{display:flex;gap:18px;flex-wrap:wrap}.metrics article{flex:1;min-width:210px;padding:25px;background:#f0f7f6;border-radius:12px}.metrics span{display:block;color:#416b6a;margin-bottom:15px}.metrics strong{font-size:35px}.metrics small{font-size:17px;font-weight:400}h2{font-size:20px;margin-top:38px}.pipeline{padding:20px;background:#173d4a;color:white;border-radius:10px;font-size:19px}.topic{font-family:monospace;font-size:14px}.foot{border-top:1px solid #d6e1e4;margin-top:32px;padding-top:20px;font-size:13px;line-height:2}</style>",
+    "storeOutMessages": true,
+    "passthru": false,
+    "resendOnRefresh": true,
+    "templateScope": "local",
+    "x": 800,
+    "y": 180,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "f15_validate",
+    "type": "function",
+    "z": "f15_cat15",
+    "name": "Validate numeric telemetry; retain source label",
+    "func": "let p=msg.payload;\nif (typeof p==='string') { try {p=JSON.parse(p)} catch(e) {node.warn('Invalid JSON');return null;} }\nif (!p || !['temperature','humidity','pressure'].every(k=>typeof p[k]==='number' && Number.isFinite(p[k]))) {node.warn('Invalid telemetry schema');return null;}\nif (p.humidity<0 || p.humidity>100 || p.pressure<=0) {node.warn('Out-of-range measurement');return null;}\nmsg.payload=p;msg.demo=msg.demo===true;msg.received=new Date().toISOString();return msg;",
+    "outputs": 1,
+    "x": 460,
+    "y": 180,
+    "wires": [
+      [
+        "f15_view"
+      ]
+    ]
+  },
+  {
+    "id": "f15_demo",
+    "type": "inject",
+    "z": "f15_cat15",
+    "name": "DEMO ONLY: synthetic example; disable for live use",
+    "props": [
+      {
+        "p": "payload",
+        "v": "{\"temperature\":25,\"pressure\":1013.25,\"humidity\":50}",
+        "vt": "json"
+      },
+      {
+        "p": "demo",
+        "v": "true",
+        "vt": "bool"
+      }
+    ],
+    "repeat": "",
+    "once": true,
+    "onceDelay": 2,
+    "x": 240,
+    "y": 100,
+    "wires": [
+      [
+        "f15_validate"
+      ]
+    ]
+  },
+  {
+    "id": "f15_mqttin",
+    "type": "mqtt in",
+    "z": "f15_cat15",
+    "name": "Live sensor input (enable for hardware)",
+    "d": true,
+    "topic": "fiot/25011102113/cat15/environment",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "f15_broker",
+    "inputs": 0,
+    "x": 220,
+    "y": 260,
+    "wires": [
+      [
+        "f15_validate"
+      ]
+    ]
+  },
+  {
+    "id": "f15_broker",
+    "type": "mqtt-broker",
+    "name": "EMQX public test broker",
+    "broker": "broker.emqx.io",
+    "port": "1883",
+    "clientid": "",
+    "autoConnect": true,
+    "usetls": false,
+    "protocolVersion": "4",
+    "keepalive": "60",
+    "cleansession": true,
+    "autoUnsubscribe": true
+  }
+]
