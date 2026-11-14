@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-14",
+  "baseline_commit": "ed1a08429539d9cc621172e01fc2a3bec137ac37",
+  "evaluated_code_commit": "6428efcf8f32b2e0f7d26fd99935c4e0f61a7748",
+  "evaluator_repository": "https://github.com/Shrinidhi-Vyairavi-NP/Foundations-of-IoT-Evaluator",
+  "evaluator_commit": "8804159cef86ac7a578e611c6179b3859df0363f",
+  "evaluator_sha256": "cdd45ac64c335fc6d82b941e9507718f73dd76c15c6ffc6214667d5e4c321756",
+  "official_cli": "python evaluate.py https://github.com/lakshmikarthikvemula-netizen/25011102113_FIoT_LAB",
+  "evaluator_modified": false,
+  "initial_pdf": "Not generated: official evaluator crashed decoding referenced SVG; original traceback retained",
+  "hardware": "NOT VERIFIED",
+  "dashboard_capture": "Running Node-RED 5.0.9 with FlowFuse Dashboard 1.36.1; DEMO DATA; Chromium capture, no page errors",
+  "remote_cli_exit_code": 0,
+  "final_summary": {
+    "projects": 29,
+    "passed": 29,
+    "failed": 0,
+    "file_checks_passed": 206,
+    "file_checks_total": 206,
+    "overall": "PASSED"
+  },
+  "report_sha256": {
+    "evaluation_report.pdf": "082a174913fa9ef6747e5f167ede0770c313b0a9935da8477832aef94034eed8",
+    "evaluation_report.md": "2409fd2b7bf52acf65611f66e097bae3f47aef49c87c99ac4493b832929b3724",
+    "evaluator.log": "6cb1028bf7bf83f460fac698b08901b148fe0edae11848bd371529cbed0ac98b"
+  }
+}

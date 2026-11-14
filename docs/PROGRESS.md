@@ -9,6 +9,8 @@
 - [x] Build all 29 firmware targets with real SDCC/GNU Arm compilers.
 - [x] Run host MQTT packet/bounds/error/timeout tests with sanitizers.
 - [x] Run unchanged official evaluator on corrected local checkout: 29/29, 206/206, PASSED.
-- [ ] Complete dashboard capture, integrity review, push and final remote evaluation.
+- [x] Capture running demo-labeled Node-RED dashboard; inspect screenshot and confirm no browser page errors.
+- [x] Pass integrity/link/project review, push code and backup branch, and run official CLI against public GitHub: PASSED.
+- [x] Retain original final Markdown/PDF and evaluator transcript with source/report hashes.
 
 Hardware, simulator, Keil execution, CubeMX regeneration and live MQTT delivery remain unverified. The Node-RED preview uses explicitly labeled demo data. Final push/evaluator provenance is recorded with the deliverable report.

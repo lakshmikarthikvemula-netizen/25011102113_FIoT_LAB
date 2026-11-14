@@ -1,0 +1,80 @@
+25011102113_FIoT_LAB/
+  8051/
+    CAT2/
+      TASK2B/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT3/
+      TASK3A/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT4/
+      TASK4A/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT5/
+      TASK5A/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK5B/TASK5B.1/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK5B/TASK5B.2/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK5B/TASK5B.3/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK5C/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT6/
+      TASK6A/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK6B/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT7/
+      TASK7A/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK7B/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK7C/
+        main.c, STARTUP.A51, *.uvproj, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+  STM32/
+    CAT8/
+      TASK8A/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK8B/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK8C/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT9/
+      TASK9A/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK9B/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT10/
+      TASK10A/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK10B/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK10C/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT11/
+      TASK11A/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK11B/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT12/
+      TASK12A/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK12B/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+      TASK12C/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT13/
+      TASK13/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT14/
+      TASK14/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+    CAT15/
+      TASK15/
+        *.ioc, .mxproject, Core/, Drivers/, MDK-ARM/, GNU/, Objects/firmware.hex, README.md, circuit.png (+ SVG)
+        Node-RED/{flows.json, package.json, settings.js, README.md, dashboard-demo.png}
+  docs/{evaluation/, build_logs/, validation and provenance records}
+  tests/{run_mqtt_tests.sh, test_mqtt.c, stm32f4xx_hal.h}
+  tools/{build.py, validate.py}
+  README.md, .gitignore
